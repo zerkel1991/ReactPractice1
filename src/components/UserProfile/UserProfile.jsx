@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'; // ES6
-import user from '../../data/user.json'
-
+import user from '../../data/user.json';
 function UserProfile ({url,username,tag,location,followers,views,likes}) {
  return (
     <div className="profile">

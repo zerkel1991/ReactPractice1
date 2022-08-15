@@ -8,8 +8,8 @@ function Statistic({title,stats}){
     <ul className="stat-list">
     {stats.map(element => (
         <li key={element.id}>
-            <span className="label">{element.label}</span>
-            <span className="percentage">{element.percentage}</span>
+            <span className="label"> {element.label}</span>
+            <span className="percentage"> {element.percentage}</span>
         </li>
       ))}
     </ul>
@@ -23,4 +23,6 @@ Statistic.propTypes = {
 }
 
 export default Statistic;
+
+
 
