@@ -1,4 +1,3 @@
-import data from '../../data/data.json';
 import PropTypes from 'prop-types'; // ES6
 import s from './StyleStat.module.css';
 function Statistic({ title, stats }) {

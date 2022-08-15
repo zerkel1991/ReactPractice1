@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; // ES6
-import user from '../../data/user.json';
+
 import s from './UserStyle.module.css';
 
 function UserProfile({
@@ -31,7 +31,7 @@ function UserProfile({
         </li>
         <li className={s.statsItem}>
           <span className={s.label}>Likes </span>
-          <span className={s.label}>{likes}</span>
+          <span className="quantity">{likes}</span>
         </li>
       </ul>
     </div>
