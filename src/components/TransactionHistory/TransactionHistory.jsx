@@ -24,9 +24,19 @@ function TransactionHistory({ id, type, amount, currency }) {
     </table>
   );
 }
+TransactionHistory.defaultProps = {
+  stats: [],
+};
 
 TransactionHistory.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default TransactionHistory;

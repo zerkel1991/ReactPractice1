@@ -8,13 +8,17 @@ function Statistic({ title, stats }) {
         {stats.map(element => (
           <li className={s.ListItem} key={element.id}>
             <span className={s.label}> {element.label}</span>
-            <span className={s.label}> {element.percentage}</span>
+            <span className={s.label}> {element.percentage} %</span>
           </li>
         ))}
       </ul>
     </section>
   );
 }
+
+Statistic.defaultProps = {
+  stats: [],
+};
 
 Statistic.propTypes = {
   title: PropTypes.string,
